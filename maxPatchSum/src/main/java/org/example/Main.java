@@ -5,9 +5,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
-
-
         //FOR PROJECT EULER QUESTION 18
 ;
          /*
@@ -30,7 +27,6 @@ public class Main {
         int sum = 0;
 
         System.out.println("Max Toplam = " + func.maxPath(1 , sum , col));
-
 
     }
 }
