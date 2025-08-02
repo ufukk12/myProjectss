@@ -6,8 +6,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        //FOR PROJECT EULER QUESTION 18
 
+
+        //FOR PROJECT EULER QUESTION 18
+;
          /*
             - Kullanıcı Tarafından n satırlı
                         *
