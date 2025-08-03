@@ -23,6 +23,12 @@ public class Main {
 
 
         char A; // one anything
+        A = 'A'; // Tek tırnak
+
+        /*
+           Char için unicod sitesindeki kodu /uaaaa a bir rakam;
+           A = /u
+         */
 
         boolean TF; // True - False
 
@@ -61,10 +67,60 @@ public class Main {
 
                     -long a = 2_147_483_648L yaptıgımızda Hata gider
 
+                    Aynı şekilde Double için D , float içi F ... gelebilir (double için sayı.0) da kabuldür
+
       */
 
-        long myLongFalse = 2_147_483_648; //Integer Number is too Large
-        long myLongTrue = 2_147_483_648L;
+        // long myLongFalse = 2_147_483_648; //Integer Number is too Large
+        long myLongTrue = 9_223L;
+
+        // float myFloatFalse = 246_465_456_464_684;
+        float myFloatTrue = 246F;
+
+        // double myDoubleFalse = 246_465_456_464_684;
+        double myDoubleTrue = 246.0; //  246465456464684D
+
+        /*
+             Bölme işlemleri Int Bölmesi ve diğer bölmeler olarak 2 ye ayrılır(diğer tiplerin)
+
+             İnt Bölmesinde int ve long için
+                    sayı ondalıklı çıkarsa sayıyı kendisinden küçük en büyük tam sayıya yuvarlar
+                    (Tam değer fonksiyonu)
+
+             Diğer Bölmelerde normal olarak sayıyı ondalıklı olarak yazdırır
+         */
+
+        System.out.println("-----------------------------------------------");
+
+        System.out.println("Integer Bölmesi" + myInteger/2);
+        System.out.println("Float Bölmesi" + myFloatTrue/2);
+        System.out.println("Double Bölmesi " + myDoubleTrue/2);
+        System.out.println("Long Bölmesi" + myLongTrue/2);
+
+
+        //------------------------------!!!!
+
+        String myName = "Ufuk";
+        System.out.println("My Name İs " + myName);
+        myName = myName + " Ozdemir";
+        System.out.println("My Name Is " + myName);
+
+        int year = 2025;
+
+        myName = myName + year;
+        System.out.println("My Name Is " + myName);
+        myName = myName + " " + 2025;
+        System.out.println("My Name Is " + myName);
+
+        /*
+                Int değer tanımlanıp String ile toplanmaya çalışılırsa Hata alınmaz
+
+                int year = 2025
+                myName = myName + year;  // hata vermez ınt degeri stringe cevirir
+                myName = myName + 2025;  // hata vermez ınt degeri stringe cevirir
+         */
+
+
 
     }
 }
